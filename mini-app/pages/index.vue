@@ -22,6 +22,7 @@
 </template>
 
 <script setup>
+import MainHeader from "~/components/MainHeader.vue";
 import { ref } from "vue";
 const raccoons = ref(0);
 const raccoons_per_sec = ref(0);
