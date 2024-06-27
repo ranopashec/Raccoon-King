@@ -1,5 +1,5 @@
 <template>
-  <header class="grid grid-cols-2 gap-4 w-full px-4">
+  <header class="touch-pan-y touch-pan-x grid grid-cols-2 gap-4 w-full px-4">
     <div class="flex flex-col items-center justify-center gap-2 rounded-lg">
       <div class="flex flex-row justify-between items-center w-full">
         <img src="/avatar.png" alt="Avatar Image" class="w-6 h-6" />
@@ -26,3 +26,18 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      meta: [
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+        }
+      ]
+    }
+  }
+}
+</script>

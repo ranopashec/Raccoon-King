@@ -1,6 +1,6 @@
 <template>
   <main
-    class="touch-pan-x  touch-pan-y bg-gradient-to-tr font-sans min-h-screen py-4 px-4 from-yellow-950 to-purple-950"
+    class="touch-pan-x touch-pan-y bg-gradient-to-tr font-sans min-h-screen py-4 px-4 from-yellow-950 to-purple-950"
   >
     <MainHeader />
     <div
