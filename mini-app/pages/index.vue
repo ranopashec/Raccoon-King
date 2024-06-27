@@ -1,7 +1,9 @@
 <template>
-  <main class="bg-gradient-to-tr font-sans min-h-screen py-4 px-4 from-yellow-950 to-purple-950">
+  <main
+    class="bg-gradient-to-tr font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 from-yellow-950 to-purple-950"
+  >
     <MainHeader />
-    <div class="flex flex-col items-center justify-center touch-pan-x gap-8 touch-pan-y mx-auto">
+    <div class="flex flex-col items-center justify-center gap-8 mx-auto">
       <div class="flex flex-row w-full justify-center items-center gap-2 mt-8">
         <img src="/coin.png" alt="Coin Image" class="w-8 h-8" />
         <p class="text-3xl text-white font-semibold">{{ clicks }} RCN</p>
