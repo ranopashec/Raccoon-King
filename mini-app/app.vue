@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import Cards from "./components/cards.vue";
-import Main from "./components/main.vue";
+import Cards from "./components/pages/cards.vue";
+import Main from "./components/pages/main.vue";
 </script>
