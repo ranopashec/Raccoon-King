@@ -1,5 +1,7 @@
 <template>
+
   <header class="grid grid-cols-2 gap-4 w-full px-4">
+
     <div class="flex flex-col items-center justify-center gap-2 rounded-lg">
       <div class="flex flex-row justify-between items-center w-full">
         <img src="/avatar.png" alt="Avatar Image" class="w-6 h-6" />
@@ -11,7 +13,9 @@
           <span class="text-xs font-medium text-white">lvl 1/5</span>
         </div>
         <div class="w-full rounded-full bg-white/65 h-6">
+
           <div class="w-1/2 h-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-400"></div>
+
         </div>
       </div>
     </div>
@@ -24,3 +28,4 @@
     </div>
   </header>
 </template>
+
