@@ -4,13 +4,13 @@
 
     <div class="flex flex-col items-center justify-center gap-2 rounded-lg">
       <div class="flex flex-row justify-between items-center w-full">
-        <img src="/avatar.png" alt="Avatar Image" class="w-6 h-6" />
-        <span class="text-md font-medium text-white">Nickname</span>
+        <img src="/avatar.png" alt="AvatarImage" class="w-6 h-6" />
+        <span class="text-md font-medium text-white"> {{nickName}}</span>
       </div>
       <div class="flex flex-col gap-1 w-full">
         <div class="w-full flex justify-between">
-          <span class="text-xs font-medium text-white">Bomj</span>
-          <span class="text-xs font-medium text-white">lvl 1/5</span>
+          <span class="text-xs font-medium text-white">{{userStatus}}</span>
+          <span class="text-xs font-medium text-white">lvl {{levelNum}}/5</span>
         </div>
         <div class="w-full rounded-full bg-white/65 h-6">
 
@@ -24,8 +24,17 @@
       class="flex flex-col items-center justify-center p-2 w-full rounded-lg bg-gradient-to-r from-20% via-50% to-80% from-black via-yellow-900 to-black"
     >
       <span class="text-xl font-medium text-white">RCN/sec</span>
-      <span class="text-2xl font-medium text-white">0</span>
+      <span class="text-2xl font-medium text-white">{{ speedRcn }}</span>
     </div>
   </header>
 </template>
 
+<script setup>
+defineProps({
+nickName:String,
+userStatus:String,
+levelNum:Number,
+speedRcn:Number,
+})
+
+</script>
