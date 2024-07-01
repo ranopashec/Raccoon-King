@@ -1,19 +1,16 @@
 <template>
   <div>
-    <main>
-      <h1 class="text-2xl font-bold mb-4">Internet Shop</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-        <CardItem
-          v-for="card in cardArray"
-          :key="card.name"
-          :price="card.price"
-          :output="card.output"
-          :image="card.image"
-          :name="card.name"
-        />
-      </div>
-    </main>
-    <NavigationBar activeMenu="2" />
+    <h1 class="text-2xl font-bold mb-4">Internet Shop</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <CardItem
+        v-for="card in cardArray"
+        :key="card.name"
+        :price="card.price"
+        :output="card.output"
+        :image="card.image"
+        :name="card.name"
+      />
+    </div>
   </div>
 </template>
 
