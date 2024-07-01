@@ -1,20 +1,23 @@
 <template>
-<div>
-  <h1 class="text-2xl font-bold mb-4">Internet Shop</h1>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <CardItem 
-    name = 'Mining farm in university',
-    price = 20,
-    output = 2,
-    image = '/FarmCard1.png' />
+  <div>
+    <h1 class="text-2xl font-bold mb-4">Internet Shop</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <CardItem
+        v-for="card in cardArray"
+        :key="card.name"
+        :price="card.price"
+        :output="card.output"
+        :image="card.image"
+        :name="card.name"
+      />
+    </div>
   </div>
-</div>
 </template>
 
 <script setup>
-import { inject } from 'vue'
+import { inject } from 'vue';
 
-const cardArray =  [
+const cardArray = [
   {
     name: 'Mining farm in university',
     price: 20,
@@ -34,7 +37,4 @@ const cardArray =  [
     image: '/FarmCard3.png',
   },
 ];
-
-
-
 </script>
