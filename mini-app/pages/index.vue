@@ -19,7 +19,7 @@
           @click="tap"
           class="w-60 h-60 rounded-3xl flex items-center justify-center bg-gray-800"
         >
-          <img src="/raccoon.png" alt="Raccoon Image" class="h-full py-5" />
+          <img :src="avatarPng" alt="Raccoon Image" class="h-full py-5" />
         </button>
       </div>
     </main>
