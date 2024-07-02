@@ -7,7 +7,9 @@
         <li class="px-4">
           <NuxtLink to="/"
             ><img
-              :src="activeMenu === '1' ? '/earn-active.png' : '/earn.png'"
+              :src="
+                activeMenu === '1' ? '/navigationImgs/earn-active.png' : '/navigationImgs/earn.png'
+              "
               class="object-contain h-12 w-12"
             />
           </NuxtLink>
@@ -15,7 +17,11 @@
         <li class="px-4">
           <NuxtLink to="/cards"
             ><img
-              :src="activeMenu === '2' ? '/cards-active.png' : '/cards.png'"
+              :src="
+                activeMenu === '2'
+                  ? '/navigationImgs/cards-active.png'
+                  : '/navigationImgs/cards.png'
+              "
               class="object-contain h-12 w-12"
             />
           </NuxtLink>
@@ -23,7 +29,11 @@
         <li class="px-4">
           <NuxtLink to="/settings"
             ><img
-              :src="activeMenu === '3' ? '/settings-active.png' : '/settings.png'"
+              :src="
+                activeMenu === '3'
+                  ? '/navigationImgs/settings-active.png'
+                  : '/navigationImgs/settings.png'
+              "
               class="object-contain h-12 w-12"
             />
           </NuxtLink>

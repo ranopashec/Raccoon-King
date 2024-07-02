@@ -5,53 +5,68 @@
 <script setup>
 import { provide, ref } from 'vue';
 const raccoons = ref(1000);
-const raccoons_per_sec = ref(0);
-const raccoons_per_clck = ref(1);
-const cardArrayFarm = reactive([
+const raccoonsPerSec = ref(0);
+const raccoonsPerClick = ref(1);
+const nickName = ref('ranopashec');
+const userLevel = ref(0);
+
+const farmingCards = reactive([
   {
     name: 'Mining farm in university',
     price: 20,
-    output: 2,
-    image: '/FarmCard1.png',
+    income: 2,
+    image: '/farmCardsImgs/1.png',
   },
   {
     name: 'Create 10 acc to farm',
     price: 60,
-    output: 6,
-    image: '/FarmCard2.png',
+    income: 6,
+    image: '/farmCardsImgs/2.png',
   },
   {
     name: 'Pass assemembly',
     price: 120,
-    output: 9,
-    image: '/FarmCard3.png',
+    income: 9,
+    image: '/farmCardsImgs/3.png',
   },
-]);
-
-const cardArrayClick = reactive([
   {
     name: 'Trash recycling',
     price: 20,
-    output: 2,
-    image: '/LootCard1.png',
+    income: 2,
+    image: '/farmCardsImgs/4.png',
   },
   {
     name: 'janchik',
     price: 60,
-    output: 6,
-    image: '/LootCard2.png',
+    income: 6,
+    image: '/farmCardsImgs/5.png',
   },
   {
     name: 'subbotnik',
     price: 120,
-    output: 9,
-    image: '/LootCard3.png',
+    income: 9,
+    image: '/farmCardsImgs/6.png',
   },
 ]);
 
+userLevel.value = computed(function () {
+  if (raccoonsPerSec.value < 1000) {
+    return 0;
+  } else if (raccoonsPerSec.value < 10000) {
+    return 1;
+  } else if (raccoonsPerSec.value < 100000) {
+    return 2;
+  } else if (raccoonsPerSec.value < 1000000) {
+    return 3;
+  } else {
+    return 4;
+  }
+});
+
 provide('raccoons', raccoons);
-provide('raccoons_per_sec', raccoons_per_sec);
-provide('raccoons_per_clck', raccoons_per_clck);
-provide('cardArrayFarm', cardArrayFarm);
-provide('cardArrayClick', cardArrayClick);
+provide('raccoonsPerSec', raccoonsPerSec);
+provide('raccoonsPerClick', raccoonsPerClick);
+provide('farmingCards', farmingCards);
+provide('nickName', nickName);
+provide('userLevel', userLevel);
 </script>
