@@ -46,6 +46,9 @@ onBeforeUnmount(() => {
 
 const raccoonImg = computed(function () {
   let userLevel = inject('userLevel');
+  if (typeof userLevel.value.value !== 'number') {
+    return '/raccoonImgs/0.png';
+  }
   return `/raccoonImgs/${userLevel.value.value}.png`;
 });
 </script>
