@@ -1,8 +1,8 @@
 <template>
   <li>
-    <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="card bg-white shadow-lg rounded-lg overflow-hidden" @click="$emit('someEvent', name, price, output)">
       <img :src="image" :alt="name" class="w-full h-48 object-cover" />
-      <div class="p-6" @click="$emit('someEvent', name, price, output)">
+      <div class="p-6" >
         <h2 class="text-xl font-bold mb-2">{{ name }}</h2>
         <h3 class="text-gray-700 mb-4">{{ price }} RCN</h3>
         <h3 class="text-gray-700">+ {{ output }} RCN/sec</h3>

@@ -56,7 +56,7 @@ function buy1(name, price, output) {
   if (raccoons.value >= price) {
     raccoons.value -= price;
     raccoons_per_clck.value += output;
-    let foundCard = cardArray.find((card) => card.name === name);
+    let foundCard = cardArray1.find((card) => card.name === name);
     console.log(`You buy ${foundCard.name}!`)
     foundCard.price = foundCard.price * 6
     foundCard.output = foundCard.output * 2
