@@ -12,7 +12,7 @@ const priceF1 = ref(20)
 const outputF1 = ref(20)
 const imageF1 = ref('/FarmCard1.png')
 
-const cardArray =  reactive ([
+const cardArrayFarm =  reactive ([
   {
     name: 'Mining farm in university',
     price: 20,
@@ -33,7 +33,7 @@ const cardArray =  reactive ([
   },
 ]);
 
-const cardArray1 =  reactive ([
+const cardArrayClick =  reactive ([
   {
     name: 'Trash recycling',
     price: 20,
@@ -59,6 +59,6 @@ const cardArray1 =  reactive ([
 provide( 'raccoons', raccoons)
 provide('raccoons_per_sec', raccoons_per_sec)
 provide('raccoons_per_clck', raccoons_per_clck)
-provide('cardArray', cardArray)
-provide('cardArray1', cardArray1)
+provide('cardArrayFarm', cardArrayFarm)
+provide('cardArrayClick', cardArrayClick)
 </script>
