@@ -10,6 +10,7 @@
           :output="card.output"
           :image="card.image"
           :name="card.name"
+          @some-event="buy"
         />
       </div>
     </main>
@@ -20,24 +21,22 @@
 <script setup>
 import { inject } from 'vue';
 
-const cardArray = [
-  {
-    name: 'Mining farm in university',
-    price: 20,
-    output: 2,
-    image: '/FarmCard1.png',
-  },
-  {
-    name: 'Create 10 acc to farm',
-    price: 60,
-    output: 6,
-    image: '/FarmCard2.png',
-  },
-  {
-    name: 'Pass assemembly',
-    price: 120,
-    output: 9,
-    image: '/FarmCard3.png',
-  },
-];
+const cardArray = inject('cardArray');
+
+const raccoons = inject('raccoons');
+const raccoons_per_sec = inject('raccoons_per_sec');
+const raccoons_per_clck = inject('raccoons_per_clck');
+
+function buy(name, price, output) {
+  if (raccoons.value >= price) {
+    raccoons.value -= price;
+    raccoons_per_sec.value += output;
+    let foundCard = cardArray.find((card) => card.name === name);
+    console.log(`You buy ${foundCard.name}!`)
+    foundCard.price = foundCard.price * 6
+    foundCard.output = foundCard.output * 2
+    console.log(foundCard.price)
+    console.log(foundCard.output)
+  }
+}
 </script>

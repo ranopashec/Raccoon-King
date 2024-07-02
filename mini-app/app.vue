@@ -12,7 +12,7 @@ const priceF1 = ref(20)
 const outputF1 = ref(20)
 const imageF1 = ref('/FarmCard1.png')
 
-const cardArray =  ref ([
+const cardArray =  reactive ([
   {
     name: 'Mining farm in university',
     price: 20,
