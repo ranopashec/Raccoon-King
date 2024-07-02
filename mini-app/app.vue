@@ -7,11 +7,6 @@ import { provide, ref } from 'vue';
 const raccoons = ref(1000);
 const raccoons_per_sec = ref(0);
 const raccoons_per_clck = ref(1);
-const nameF1 = ref('Mining farm in university');
-const priceF1 = ref(20);
-const outputF1 = ref(20);
-const imageF1 = ref('/FarmCard1.png');
-
 const cardArrayFarm = reactive([
   {
     name: 'Mining farm in university',
