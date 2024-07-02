@@ -4,7 +4,7 @@
 
 <script setup>
 import { provide, ref } from 'vue';
-const raccoons = ref(0);
+const raccoons = ref(1000);
 const raccoons_per_sec = ref(0);
 const raccoons_per_clck = ref(1);
 const nameF1 = ref('Mining farm in university');
