@@ -1,5 +1,5 @@
 <template>
-  <header class="grid grid-cols-2 gap-4 w-full px-4 bg-gray-900/50 rounded-lg">
+  <header class="grid grid-cols-2 gap-4 w-full px-4 bg-gray-800/50 rounded-lg">
     <div class="flex flex-col items-center justify-center gap-2 rounded-lg">
       <div class="flex flex-row justify-between items-center w-full">
         <!-- <img src="/avatar.png" alt="AvatarImage" class="w-6 h-6" /> -->
@@ -22,10 +22,10 @@
         <img src="/coin.png" alt="Coin Image" class="w-4 h-4" />
         <p class="text-xm text-white font-semibold">/ s</p>
       </span>
-      <div class="flex flex-row w-full justify-center items-center gap-1 py-2">
+      <span class="flex flex-row w-full justify-center items-center gap-1 py-2">
         <p class="text-base text-white font-semibold">{{ raccoons }}</p>
         <img src="/coin.png" alt="Coin Image" class="w-6 h-6" />
-      </div>
+      </span>
     </div>
   </header>
 </template>

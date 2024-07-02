@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="fixed bottom-0 w-full h-16 bg-gradient-to-r from-0% via-50% to-100% from-black via-gray-800 to-black"
-  >
+  <footer class="fixed bottom-0 w-full h-16 bg-gray-950">
     <nav class="container mx-auto">
       <ul class="flex justify-center items-center py-2">
         <li class="px-4">

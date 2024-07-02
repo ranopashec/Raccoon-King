@@ -1,10 +1,23 @@
 <template>
-  <div class="bg-gray-900" @click="$emit('someEvent', name, price, income)">
-    <img class="h-40 w-full object-cover rounded-t-lg" :src="image" alt="Card Image" />
-    <div class="p-4">
-      <h3 class="text-lg font-bold mb-2">{{ name }}</h3>
-      <p class="text-gray-700">Price: {{ price }}</p>
-      <p class="text-gray-700">Outcome: {{ income }}</p>
+  <div
+    class="bg-gray-800/50 rounded-lg w-full mx-auto"
+    @click="$emit('someEvent', name, price, income)"
+  >
+    <div class="flex items-center justify-between p-2">
+      <img class="h-20 w-20 object-cover mr-8" :src="image" alt="Card Image" />
+      <b class="text-white text-m">{{ name }}</b>
+    </div>
+    <hr class="border-white" />
+    <div class="bg-gray-950/60 flex justify-center rounded-b-lg">
+      <span class="flex flex-row w-full justify-center items-center gap-1 py-2">
+        <p class="text-base text-white font-semibold">{{ income }}</p>
+        <img src="/coin.png" alt="Coin Image" class="w-4 h-4" />
+        <p class="text-base text-white font-semibold">/ S</p>
+      </span>
+      <span class="flex flex-row w-full justify-center items-center gap-1 py-2">
+        <p class="text-base text-white font-semibold">{{ price }}</p>
+        <img src="/coin.png" alt="Coin Image" class="w-6 h-6" />
+      </span>
     </div>
   </div>
 </template>
