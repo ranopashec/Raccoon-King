@@ -47,7 +47,7 @@ function farm() {
 onMounted(() => {
   timer.value = setInterval(() => {
     farm();
-  }, 1000);
+  }, 2000);
 });
 
 onBeforeUnmount(() => {

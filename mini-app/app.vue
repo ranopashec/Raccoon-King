@@ -3,16 +3,16 @@
 </template>
 
 <script setup>
-import { provide, ref } from 'vue'
-const raccoons = ref(0)
-const raccoons_per_sec = ref(0)
-const raccoons_per_clck = ref(1)
-const nameF1 = ref('Mining farm in university')
-const priceF1 = ref(20)
-const outputF1 = ref(20)
-const imageF1 = ref('/FarmCard1.png')
+import { provide, ref } from 'vue';
+const raccoons = ref(0);
+const raccoons_per_sec = ref(0);
+const raccoons_per_clck = ref(1);
+const nameF1 = ref('Mining farm in university');
+const priceF1 = ref(20);
+const outputF1 = ref(20);
+const imageF1 = ref('/FarmCard1.png');
 
-const cardArrayFarm =  reactive ([
+const cardArrayFarm = reactive([
   {
     name: 'Mining farm in university',
     price: 20,
@@ -33,7 +33,7 @@ const cardArrayFarm =  reactive ([
   },
 ]);
 
-const cardArrayClick =  reactive ([
+const cardArrayClick = reactive([
   {
     name: 'Trash recycling',
     price: 20,
@@ -54,11 +54,9 @@ const cardArrayClick =  reactive ([
   },
 ]);
 
-
-
-provide( 'raccoons', raccoons)
-provide('raccoons_per_sec', raccoons_per_sec)
-provide('raccoons_per_clck', raccoons_per_clck)
-provide('cardArrayFarm', cardArrayFarm)
-provide('cardArrayClick', cardArrayClick)
+provide('raccoons', raccoons);
+provide('raccoons_per_sec', raccoons_per_sec);
+provide('raccoons_per_clck', raccoons_per_clck);
+provide('cardArrayFarm', cardArrayFarm);
+provide('cardArrayClick', cardArrayClick);
 </script>
