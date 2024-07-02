@@ -33,8 +33,32 @@ const cardArray =  reactive ([
   },
 ]);
 
+const cardArray1 =  reactive ([
+  {
+    name: 'Trash recycling',
+    price: 20,
+    output: 2,
+    image: '/LootCard1.png',
+  },
+  {
+    name: 'janchik',
+    price: 60,
+    output: 6,
+    image: '/LootCard2.png',
+  },
+  {
+    name: 'subbotnik',
+    price: 120,
+    output: 9,
+    image: '/LootCard3.png',
+  },
+]);
+
+
+
 provide( 'raccoons', raccoons)
 provide('raccoons_per_sec', raccoons_per_sec)
 provide('raccoons_per_clck', raccoons_per_clck)
 provide('cardArray', cardArray)
+provide('cardArray1', cardArray1)
 </script>
