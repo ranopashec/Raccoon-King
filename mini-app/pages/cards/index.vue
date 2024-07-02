@@ -1,20 +1,22 @@
 <template>
-  <div>
+  <div class="bg-black">
     <main
-      class="font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-50% to-100% from-black via-purple-950 to-black"
+      class="font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-20 via-50% to-100% from-purple-950/40 via-purple-950/20 to-purple-950/40"
     >
       <MainHeader />
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-        <FarmCard
-          v-for="card in farmingCards"
-          :key="card.name"
-          :price="card.price"
-          :income="card.income"
-          :image="card.image"
-          :name="card.name"
-          @some-event="buyFarmCard"
-        />
+      <div>
+        <div class="grid grid-cols-1 gap-4 py-8 mb-10">
+          <FarmCard
+            v-for="card in farmingCards"
+            :key="card.name"
+            :price="card.price"
+            :income="card.income"
+            :image="card.image"
+            :name="card.name"
+            @some-event="buyFarmCard"
+          />
+        </div>
       </div>
     </main>
     <NavigationBar activeMenu="2" />

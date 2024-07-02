@@ -18,13 +18,13 @@ const farmingCards = reactive([
     image: '/farmCardsImgs/1.png',
   },
   {
-    name: 'Create 10 acc to farm',
+    name: 'Multiaccount',
     price: 60,
     income: 6,
     image: '/farmCardsImgs/2.png',
   },
   {
-    name: 'Pass assemembly',
+    name: 'Assemembly classes',
     price: 120,
     income: 9,
     image: '/farmCardsImgs/3.png',
@@ -36,7 +36,7 @@ const farmingCards = reactive([
     image: '/farmCardsImgs/4.png',
   },
   {
-    name: 'janchik',
+    name: 'Janchik',
     price: 60,
     income: 6,
     image: '/farmCardsImgs/5.png',
