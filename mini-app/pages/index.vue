@@ -17,7 +17,7 @@
 
         <button
           @click="tap"
-          class="w-60 h-60 rounded-3xl flex items-center justify-center bg-gray-800"
+          class="w-60 h-60 rounded-3xl flex items-center justify-center bg-gradient-to-r from-0% via-50% to-100% from-black via-gray-800 to-black"
         >
           <img :src="avatarPng" alt="Raccoon Image" class="h-full py-5" />
         </button>

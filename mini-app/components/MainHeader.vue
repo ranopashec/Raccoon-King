@@ -10,14 +10,16 @@
           <span class="text-xs font-medium text-white">{{ userStatus }}</span>
           <span class="text-xs font-medium text-white">lvl {{ levelNum }}/5</span>
         </div>
-        <div class="w-full rounded-full bg-white/65 h-6">
+        <div
+          class="w-full rounded-full bg-gradient-to-r from-0% via-50% to-100% from-black via-gray-800 to-black h-6"
+        >
           <div class="w-1/2 h-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-400"></div>
         </div>
       </div>
     </div>
 
     <div
-      class="flex flex-col items-center justify-center p-2 w-full rounded-lg bg-gradient-to-r from-20% via-50% to-80% from-black via-yellow-900 to-black"
+      class="flex flex-col items-center justify-center p-2 w-full rounded-lg bg-gradient-to-r from-0% via-50% to-100% from-black via-gray-800 to-black"
     >
       <span class="text-xl font-medium text-white">RCN/sec</span>
       <span class="text-2xl font-medium text-white">{{ speedRcn }}</span>
