@@ -8,28 +8,66 @@
           :key="`card-${index}`"
           :value="card.value"
           :visible="card.visible"
-          :position="index"
+          :position="card.position"
+          :matched="card.matched"
           @selectCard="flipCard"
         />
       </section>
+      <h2>{{ status }}</h2>
     </main>
   </div>
 </template>
 
 <script setup>
 import Card from './Card.vue';
+import { ref, watch } from 'vue';
 
 const cardList = ref([]);
+const userSelection = ref([]);
+const status = ref('');
+
 for (let i = 0; i < 16; i++) {
   cardList.value.push({
-    value: i,
+    value: 1,
     visible: false,
+    position: i,
+    matched: false,
   });
 }
 
-const flipCard = position => {
-  cardList.value[position].visible = true;
+const flipCard = payload => {
+  cardList.value[payload.position].visible = true;
+  if (userSelection.value[0]) {
+    userSelection.value[1] = payload;
+  } else {
+    userSelection.value[0] = payload;
+  }
 };
+
+watch(
+  userSelection,
+  currentValue => {
+    if (currentValue.length === 2) {
+      const cardOne = currentValue[0];
+      const cardTwo = currentValue[1];
+
+      if (cardOne.value === cardTwo.value) {
+        status.value = 'Matched!';
+
+        cardList.value[cardOne.position].matched = true;
+        cardList.value[cardTwo.position].matched = true;
+      } else {
+        status.value = 'Mismatched (';
+        cardList.value[cardOne.position].visible = false;
+        cardList.value[cardTwo.position].visible = false;
+      }
+
+      userSelection.value.length = 0;
+      console.log(currentValue);
+    }
+  },
+  { deep: true },
+);
 </script>
 
 <style>
