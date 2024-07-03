@@ -24,7 +24,19 @@ import { ref, watch } from 'vue';
 
 const cardList = ref([]);
 const userSelection = ref([]);
-const status = ref('');
+
+const status = computed(() => {
+  if (remainingPairs.value === 0) {
+    return 'You win!';
+  } else {
+    return `${remainingPairs.value} pairs left`;
+  }
+});
+
+const remainingPairs = computed(() => {
+  const RemainingCards = cardList.value.filter(card => card.matched === false).length;
+  return RemainingCards / 2;
+});
 
 for (let i = 0; i < 16; i++) {
   cardList.value.push({
