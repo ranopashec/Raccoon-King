@@ -14,6 +14,7 @@
         />
       </section>
       <h2>{{ status }}</h2>
+      <button @click="restart">Reset</button>
     </main>
   </div>
 </template>
@@ -32,6 +33,21 @@ const status = computed(() => {
     return `${remainingPairs.value} pairs left`;
   }
 });
+
+const restart = () => {
+  for (let i = cardList.value.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cardList.value[i], cardList.value[j]] = [cardList.value[j], cardList.value[i]];
+  }
+  cardList.value = cardList.value.map((card, index) => {
+    return {
+      ...card,
+      matched: false,
+      position: index,
+      visible: false,
+    };
+  });
+};
 
 const remainingPairs = computed(() => {
   const RemainingCards = cardList.value.filter(card => card.matched === false).length;
@@ -64,12 +80,9 @@ watch(
       const cardTwo = currentValue[1];
 
       if (cardOne.value === cardTwo.value) {
-        status.value = 'Matched!';
-
         cardList.value[cardOne.position].matched = true;
         cardList.value[cardTwo.position].matched = true;
       } else {
-        status.value = 'Mismatched (';
         cardList.value[cardOne.position].visible = false;
         cardList.value[cardTwo.position].visible = false;
       }
