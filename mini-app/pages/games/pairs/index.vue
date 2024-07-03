@@ -25,6 +25,34 @@ import { ref, watch } from 'vue';
 
 const cardList = ref([]);
 const userSelection = ref([]);
+const cardItems = [1, 2, 3, 4, 5, 6, 7, 8];
+
+cardItems.forEach(item => {
+  cardList.value.push({
+    value: item,
+    visible: false,
+    position: null,
+    matched: false,
+  });
+  cardList.value.push({
+    value: item,
+    visible: false,
+    position: null,
+    matched: false,
+  });
+});
+
+cardList.value = cardList.value.map((card, index) => {
+  return {
+    ...card,
+    position: index,
+  };
+});
+
+const remainingPairs = computed(() => {
+  const RemainingCards = cardList.value.filter(card => card.matched === false).length;
+  return RemainingCards / 2;
+});
 
 const status = computed(() => {
   if (remainingPairs.value === 0) {
@@ -33,35 +61,6 @@ const status = computed(() => {
     return `${remainingPairs.value} pairs left`;
   }
 });
-
-const restart = () => {
-  for (let i = cardList.value.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [cardList.value[i], cardList.value[j]] = [cardList.value[j], cardList.value[i]];
-  }
-  cardList.value = cardList.value.map((card, index) => {
-    return {
-      ...card,
-      matched: false,
-      position: index,
-      visible: false,
-    };
-  });
-};
-
-const remainingPairs = computed(() => {
-  const RemainingCards = cardList.value.filter(card => card.matched === false).length;
-  return RemainingCards / 2;
-});
-
-for (let i = 0; i < 16; i++) {
-  cardList.value.push({
-    value: 1,
-    visible: false,
-    position: i,
-    matched: false,
-  });
-}
 
 const flipCard = payload => {
   cardList.value[payload.position].visible = true;
@@ -93,6 +92,21 @@ watch(
   },
   { deep: true },
 );
+
+const restart = () => {
+  for (let i = cardList.value.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cardList.value[i], cardList.value[j]] = [cardList.value[j], cardList.value[i]];
+  }
+  cardList.value = cardList.value.map((card, index) => {
+    return {
+      ...card,
+      matched: false,
+      position: index,
+      visible: false,
+    };
+  });
+};
 </script>
 
 <style>
