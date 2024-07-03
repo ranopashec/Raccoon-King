@@ -1,17 +1,17 @@
 <template>
   <div class="bg-black text-white text-center h-screen py-10">
     <h1 class="text-5xl py-10">Find a Pair</h1>
-    <section class="game-board">
+    <transition-group name="shuffle-card" tag="section" class="game-board">
       <Card
-        v-for="(card, index) in cardList"
-        :key="`card-${index}`"
+        v-for="card in cardList"
+        :key="`${card.value}-${card.variant}`"
         :value="card.value"
         :visible="card.visible"
         :position="card.position"
         :matched="card.matched"
         @selectCard="flipCard"
       />
-    </section>
+    </transition-group>
     <h2>{{ status }}</h2>
     <button @click="restart">Reset</button>
   </div>
@@ -28,12 +28,14 @@ const cardItems = [1, 2, 3, 4, 5, 6, 7, 8];
 cardItems.forEach(item => {
   cardList.value.push({
     value: item,
+    variant: 1,
     visible: false,
     position: null,
     matched: false,
   });
   cardList.value.push({
     value: item,
+    variant: 2,
     visible: false,
     position: null,
     matched: false,
@@ -121,5 +123,9 @@ const restart = () => {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: center;
+}
+
+.shuffle-card-move {
+  transition: transform 0.8s ease-in;
 }
 </style>
