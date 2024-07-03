@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-800/50 rounded-lg mt-20 text-white text-center h-screen w-full py-10">
-    <h1 class="text-5xl py-10">Find a Pair</h1>
+  <div class="bg-gray-800/50 rounded-lg mt-10 text-white text-center h-screen w-full py-10">
+    <h1 class="text-5xl py-10">FIND A PAIR</h1>
     <transition-group name="shuffle-card" tag="section" class="game-board">
       <Card
         v-for="card in cardList"

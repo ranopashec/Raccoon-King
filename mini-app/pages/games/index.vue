@@ -1,5 +1,6 @@
 <script setup>
 import Game from '~/components/games/pairs/Game.vue';
+import Back from '~/components/Back.vue';
 </script>
 
 <template>
@@ -12,8 +13,6 @@ import Game from '~/components/games/pairs/Game.vue';
         <Game />
       </div>
     </main>
-    <NuxtLink to="/">
-      <h1>back</h1>
-    </NuxtLink>
+    <Back />
   </div>
 </template>
