@@ -7,7 +7,12 @@ import { provide, ref } from 'vue';
 const raccoons = ref(1000);
 const raccoonsPerSec = ref(0);
 const raccoonsPerClick = ref(1);
-const nickName = ref('ranopashec');
+const nickName = ref('nickname');
+
+onMounted(() => {
+  nickName.value = window.Telegram.WebApp.initDataUnsafe.user.username;
+});
+
 const userLevel = ref(0);
 
 const farmingCards = reactive([
