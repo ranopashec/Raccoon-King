@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import Card from './Card.vue';
+import Card from '~/components/games/pairs/Card.vue';
 import { ref, watch } from 'vue';
 
 const cardList = ref([]);
@@ -62,15 +62,6 @@ const status = computed(() => {
   }
 });
 
-const flipCard = payload => {
-  cardList.value[payload.position].visible = true;
-  if (userSelection.value[0]) {
-    userSelection.value[1] = payload;
-  } else {
-    userSelection.value[0] = payload;
-  }
-};
-
 watch(
   userSelection,
   currentValue => {
@@ -83,17 +74,33 @@ watch(
         cardList.value[cardTwo.position].matched = true;
       } else {
         setTimeout(() => {
-          cardList.value[cardOne.position].visible = false;
-          cardList.value[cardTwo.position].visible = false;
+          if (!cardList.value[cardOne.position].matched) {
+            cardList.value[cardOne.position].visible = false;
+          }
+          if (!cardList.value[cardTwo.position].matched) {
+            cardList.value[cardTwo.position].visible = false;
+          }
         }, 2000);
       }
-
       userSelection.value.length = 0;
       console.log(currentValue);
     }
   },
   { deep: true },
 );
+
+const flipCard = payload => {
+  cardList.value[payload.position].visible = true;
+  if (userSelection.value[0]) {
+    if (userSelection.value[0].position === payload.position) {
+      return;
+    } else {
+      userSelection.value[1] = payload;
+    }
+  } else {
+    userSelection.value[0] = payload;
+  }
+};
 
 const restart = () => {
   for (let i = cardList.value.length - 1; i > 0; i--) {
