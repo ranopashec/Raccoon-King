@@ -1,20 +1,23 @@
 <template>
-  <div class="card">
-    {{ myNumber }}
+  <div class="border-4 border-white border-solid relative" @click="$emit('selectCard', position)">
+    <div v-if="visible" class="bg-red-500 w-full h-full absolute">{{ value }}</div>
+    <div v-else class="bg-blue-500 w-full h-full absolute">Back</div>
   </div>
 </template>
 
 <script setup>
 defineProps({
-  myNumber: {
+  position: {
     type: Number,
+    required: false,
+  },
+  value: {
+    type: Number,
+    required: true,
+  },
+  visible: {
+    type: Boolean,
     required: true,
   },
 });
 </script>
-
-<style>
-.card {
-  border: 5px solid #ccc;
-}
-</style>
