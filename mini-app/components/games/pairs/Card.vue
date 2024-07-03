@@ -50,7 +50,6 @@ const props = defineProps({
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
 }
 
 .card-face.front {
@@ -58,6 +57,6 @@ const props = defineProps({
 }
 
 .card-face.back {
-  background-color: #4299e1; /* blue-500 color */
+  background-color: black; /* blue-500 color */
 }
 </style>

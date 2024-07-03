@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white text-center h-screen py-10">
+  <div class="bg-gray-800/50 rounded-lg mt-20 text-white text-center h-screen w-full py-10">
     <h1 class="text-5xl py-10">Find a Pair</h1>
     <transition-group name="shuffle-card" tag="section" class="game-board">
       <Card
@@ -118,10 +118,10 @@ const restart = () => {
 <style>
 .game-board {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   justify-content: center;
 }
 
