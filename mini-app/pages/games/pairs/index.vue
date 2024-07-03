@@ -1,21 +1,19 @@
 <template>
-  <div>
-    <main class="bg-black text-white text-center mt-12">
-      <h1 class="text-5xl">Find a Pair</h1>
-      <section class="game-board">
-        <Card
-          v-for="(card, index) in cardList"
-          :key="`card-${index}`"
-          :value="card.value"
-          :visible="card.visible"
-          :position="card.position"
-          :matched="card.matched"
-          @selectCard="flipCard"
-        />
-      </section>
-      <h2>{{ status }}</h2>
-      <button @click="restart">Reset</button>
-    </main>
+  <div class="bg-black text-white text-center h-screen py-10">
+    <h1 class="text-5xl py-10">Find a Pair</h1>
+    <section class="game-board">
+      <Card
+        v-for="(card, index) in cardList"
+        :key="`card-${index}`"
+        :value="card.value"
+        :visible="card.visible"
+        :position="card.position"
+        :matched="card.matched"
+        @selectCard="flipCard"
+      />
+    </section>
+    <h2>{{ status }}</h2>
+    <button @click="restart">Reset</button>
   </div>
 </template>
 
@@ -69,7 +67,7 @@ watch(
       const cardOne = currentValue[0];
       const cardTwo = currentValue[1];
 
-      if (cardOne.value === cardTwo.value) {
+      if (cardOne.value === cardTwo.value && cardOne.position !== cardTwo.position) {
         cardList.value[cardOne.position].matched = true;
         cardList.value[cardTwo.position].matched = true;
       } else {
@@ -80,10 +78,11 @@ watch(
           if (!cardList.value[cardTwo.position].matched) {
             cardList.value[cardTwo.position].visible = false;
           }
-        }, 2000);
+        }, 500);
       }
       userSelection.value.length = 0;
       console.log(currentValue);
+    } else if (currentValue.length > 2) {
     }
   },
   { deep: true },
@@ -92,11 +91,7 @@ watch(
 const flipCard = payload => {
   cardList.value[payload.position].visible = true;
   if (userSelection.value[0]) {
-    if (userSelection.value[0].position === payload.position) {
-      return;
-    } else {
-      userSelection.value[1] = payload;
-    }
+    userSelection.value[1] = payload;
   } else {
     userSelection.value[0] = payload;
   }

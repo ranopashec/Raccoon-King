@@ -1,15 +1,20 @@
 <template>
   <div
-    class="border-4 border-white border-solid relative"
+    class="relative card"
+    :class="{ flipped: props.visible }"
     @click="$emit('selectCard', { position, value })"
   >
-    <div v-if="visible" class="bg-red-500 w-full h-full absolute">{{ value }}</div>
-    <div v-else class="bg-blue-500 w-full h-full absolute">Back</div>
+    <div class="card-face front">
+      <img :src="`/games/pairs/${value}.png`" />
+    </div>
+    <div class="card-face back">
+      <!-- <img :src="`/games/pairs/back.png`" /> -->
+    </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   matched: {
     type: Boolean,
     default: false,
@@ -28,3 +33,31 @@ defineProps({
   },
 });
 </script>
+
+<style scoped>
+.card {
+  position: relative;
+  transition: transform 0.5s ease-in;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.card-face.front {
+  transform: rotateY(180deg);
+}
+
+.card-face.back {
+  background-color: #4299e1; /* blue-500 color */
+}
+</style>
