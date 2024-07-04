@@ -5,10 +5,16 @@
     @click="$emit('selectCard', { position, value })"
   >
     <div class="card-face front rounded-xl">
-      <img :src="`/games/pairs/${value}.png`" />
+      <img
+        class="rounded-xl border-solid border-purple-500/50 border-4"
+        :src="`/games/pairs/${value}.png`"
+      />
     </div>
     <div class="card-face back rounded-xl">
-      <img class="rounded-xl" :src="`/games/pairs/card.png`" />
+      <img
+        class="rounded-xl border-solid border-pink-500/50 border-4"
+        :src="`/games/pairs/card.png`"
+      />
     </div>
   </div>
 </template>
