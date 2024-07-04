@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import Card from '~/components/games/pairs/Card.vue';
+import Card from './Card.vue';
 import { ref, watch } from 'vue';
 
 const cardList = ref([]);
@@ -86,7 +86,6 @@ watch(
         }, 500);
       }
       userSelection.value.length = 0;
-      console.log(currentValue);
     } else if (currentValue.length > 2) {
     }
   },
