@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-gray-800/50 rounded-lg mt-10 text-white text-center h-screen w-full py-10">
-    <h1 class="text-5xl py-10">FIND A PAIR</h1>
+  <div class="bg-gray-800/50 rounded-lg mt-10 text-white text-center h-full w-full py-10">
+    <h1 class="text-5xl animate-bounce">FIND A PAIR</h1>
+    <h2 class="mt-10 mb-10">{{ status }}</h2>
+
     <transition-group name="shuffle-card" tag="section" class="game-board">
       <Card
         v-for="card in cardList"
@@ -12,13 +14,14 @@
         @selectCard="flipCard"
       />
     </transition-group>
-    <h2>{{ status }}</h2>
-    <button @click="restart">Reset</button>
+    <button class="p-2 border-pink-500/50 border-4 rounded-lg mb-24 mt-10" @click="restart">
+      Restart
+    </button>
   </div>
 </template>
 
 <script setup>
-import Card from '~/components/games/pairs/Card.vue';
+import Card from './Card.vue';
 import { ref, watch } from 'vue';
 
 const cardList = ref([]);
@@ -83,7 +86,6 @@ watch(
         }, 500);
       }
       userSelection.value.length = 0;
-      console.log(currentValue);
     } else if (currentValue.length > 2) {
     }
   },

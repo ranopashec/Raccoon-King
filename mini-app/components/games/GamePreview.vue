@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between p-2">
         <img class="h-40 w-full object-cover mx-auto" :src="image" alt="Card Image" />
       </div>
-      <div class="flex justify-center rounded-b-lg h-10">
+      <div class="flex justify-center rounded-xl h-10">
         <b class="text-gray-400 text-m my-auto">{{ name }}</b>
       </div>
     </NuxtLink>

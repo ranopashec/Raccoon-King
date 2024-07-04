@@ -2,9 +2,9 @@
   <header class="grid grid-cols-2 gap-4 w-full px-4 bg-gray-800/50 rounded-lg">
     <div class="flex flex-col items-center justify-center gap-2 rounded-lg">
       <div class="flex flex-row justify-between items-center w-full">
-        <!-- <img src="/avatar.png" alt="AvatarImage" class="w-6 h-6" /> -->
-        <span class="text-xs font-medium text-white"> {{ nickName }}</span>
-        <span class="text-xs font-medium text-white">( {{ userStatus[userLevel.value] }} )</span>
+        <span class="text-xs font-medium text-white">
+          {{ nickName }} ( {{ userStatus[userLevel.value] }} )</span
+        >
       </div>
       <div class="flex flex-col gap-1 w-full">
         <div class="w-full">
