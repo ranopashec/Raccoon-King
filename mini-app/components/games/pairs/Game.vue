@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-800/50 rounded-lg mt-10 text-white text-center h-full w-full py-10">
-    <h1 class="text-5xl">FIND A PAIR</h1>
+    <h1 class="text-5xl animate-bounce">FIND A PAIR</h1>
     <h2 class="mt-10 mb-10">{{ status }}</h2>
 
     <transition-group name="shuffle-card" tag="section" class="game-board">
