@@ -8,7 +8,7 @@
       <b class="text-white text-m">{{ name }}</b>
     </div>
     <hr class="border-white" />
-    <div class="bg-gray-950/60 flex justify-center rounded-b-lg">
+    <div class="bg-gray-950 flex justify-center rounded-b-lg">
       <span class="flex flex-row w-full justify-center items-center gap-1 py-2">
         <p class="text-base text-white font-semibold">{{ income }}</p>
         <img src="/coin.png" alt="Coin Image" class="w-4 h-4" />

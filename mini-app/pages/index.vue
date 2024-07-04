@@ -12,6 +12,7 @@
           <img :src="raccoonImg" alt="Raccoon Image" class="h-full py-5" />
         </button>
       </div>
+      <Games />
     </main>
     <NavigationBar activeMenu="1" />
   </div>
@@ -19,6 +20,7 @@
 
 <script setup>
 import { ref, inject, computed, onMounted, onBeforeUnmount } from 'vue';
+import Games from '~/components/games/Games.vue';
 
 const raccoonsPerSec = inject('raccoonsPerSec');
 const raccoons = inject('raccoons');
