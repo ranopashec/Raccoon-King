@@ -4,11 +4,11 @@
     :class="{ flipped: props.visible }"
     @click="$emit('selectCard', { position, value })"
   >
-    <div class="card-face front">
+    <div class="card-face front rounded-xl">
       <img :src="`/games/pairs/${value}.png`" />
     </div>
-    <div class="card-face back">
-      <!-- <img :src="`/games/pairs/back.png`" /> -->
+    <div class="card-face back rounded-xl">
+      <img class="rounded-xl" :src="`/games/pairs/card.png`" />
     </div>
   </div>
 </template>
@@ -53,10 +53,11 @@ const props = defineProps({
 }
 
 .card-face.front {
+  background-color: #fdf7df;
   transform: rotateY(180deg);
 }
 
 .card-face.back {
-  background-color: black; /* blue-500 color */
+  background-color: #fdf7df;
 }
 </style>
