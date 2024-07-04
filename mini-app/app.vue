@@ -3,16 +3,51 @@
 </template>
 
 <script setup>
-import { provide, ref } from 'vue';
-const raccoons = ref(1000);
+import { provide, ref, reactive, onMounted, onBeforeUnmount } from 'vue';
+
 const raccoonsPerSec = ref(0);
 const raccoonsPerClick = ref(1);
-const nickName = ref('nickname');
+const nickName = ref("Nickname");
+const raccoons = ref(0);
+const timer = ref();
 
 onMounted(() => {
   nickName.value = window.Telegram.WebApp.initDataUnsafe.user.username;
 });
 
+
+onMounted(async () => {
+  const storage = window.Telegram.WebApp.CloudStorage;
+  const promise1 =  new Promise ((resolve) => {
+    storage.getItem('raccoons', (error, value) => {
+      if (error) {
+        resolve (Number(0))
+      } 
+      if (value === null) {
+        resolve (Number(0))
+      }
+      if (value == undefined) {
+        resolve (Number(0))
+      }
+      resolve (Number(value))
+    });
+  })
+
+  const value = await promise1;
+  raccoons.value = value;
+});
+
+onMounted(() => {
+  const storage = window.Telegram.WebApp.CloudStorage;
+  timer.value = setInterval(() => {
+    storage.setItem('raccoons', String(raccoons.value))
+  }, 1000);
+});
+onBeforeUnmount(() => {
+  timer.value = 0;
+})
+
+provide('raccoons', raccoons);
 const userLevel = ref(0);
 
 const farmingCards = reactive([
@@ -68,7 +103,7 @@ userLevel.value = computed(function () {
   }
 });
 
-provide('raccoons', raccoons);
+
 provide('raccoonsPerSec', raccoonsPerSec);
 provide('raccoonsPerClick', raccoonsPerClick);
 provide('farmingCards', farmingCards);
