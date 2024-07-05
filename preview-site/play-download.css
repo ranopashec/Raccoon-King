@@ -1,0 +1,220 @@
+.play-download-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.play-download-play-download {
+  width: 100%;
+  height: 1457px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+.play-download-image2 {
+  top: 293px;
+  left: -2px;
+  width: 478px;
+  height: 1024px;
+  position: absolute;
+}
+.play-download-image1 {
+  top: 325px;
+  right: 6px;
+  width: 558px;
+  height: 1024px;
+  position: absolute;
+}
+.play-download-text {
+  top: 208px;
+  left: 480px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Black;
+  text-align: center;
+  font-family: Acari Sans;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.play-download-header {
+  top: 0px;
+  left: 129px;
+  width: 1662px;
+  height: 85px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.play-download-bg {
+  top: -1px;
+  width: 1662px;
+  height: 85px;
+  position: absolute;
+  border-radius: 13px;
+}
+.play-download-navlink {
+  display: contents;
+}
+.play-download-contactbt {
+  top: 16px;
+  left: 1196px;
+  width: 210px;
+  height: 54px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-radius: 44px;
+  text-decoration: none;
+  background-color: rgba(116, 45, 210, 1);
+}
+.play-download-text04 {
+  top: 12px;
+  left: 31px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Book;
+  text-align: left;
+  font-family: Stolzl;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.play-download-navlink1 {
+  display: contents;
+}
+.play-download-devbt {
+  top: 15px;
+  left: 916px;
+  width: 210px;
+  height: 54px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-radius: 44px;
+  text-decoration: none;
+  background-color: rgba(116, 45, 210, 1);
+}
+.play-download-text06 {
+  top: 12px;
+  left: 32px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Book;
+  text-align: left;
+  font-family: Stolzl;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.play-download-playbt {
+  top: 15px;
+  left: 598px;
+  width: 248px;
+  height: 54px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: #efb1ff;
+  border-width: 4px;
+  border-radius: 44px;
+  justify-content: center;
+  background-color: rgba(239, 177, 255, 0.45);
+}
+.play-download-text08 {
+  top: 7px;
+  left: 92px;
+  color: rgb(255, 255, 255);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Book;
+  text-align: left;
+  font-family: Stolzl;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.play-download-navlink2 {
+  display: contents;
+}
+.play-download-logo1 {
+  top: 5px;
+  left: 240px;
+  width: 123px;
+  height: 74px;
+  position: absolute;
+  text-decoration: none;
+}
+.play-download-link {
+  display: contents;
+}
+.play-download-firstbt {
+  top: 656px;
+  left: 655px;
+  width: 581.6842041015625px;
+  height: 144px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  text-decoration: none;
+}
+.play-download-rectforblur {
+  top: 0px;
+  left: 0px;
+  width: 578px;
+  height: 133px;
+  position: absolute;
+  border-radius: 44px;
+}
+.play-download-bgrect {
+  top: 13.263157844543457px;
+  left: 3.78947377204895px;
+  width: 578px;
+  height: 131px;
+  position: absolute;
+  border-radius: 44px;
+}
+.play-download-mainrect {
+  top: 0px;
+  left: 0px;
+  width: 578px;
+  height: 133px;
+  position: absolute;
+  border-radius: 44px;
+}
+.play-download-text09 {
+  top: 27.999971389770508px;
+  left: 147.9999237060547px;
+  color: rgba(0, 0, 0, 1);
+  width: 286px;
+  height: auto;
+  position: absolute;
+  font-size: 65px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

@@ -1,625 +1,3 @@
-<template>
-  <div class="landing-container">
-    <div class="landing-landing">
-      <div class="landing-footer">
-        <span class="landing-text">
-          <span>Raccoon King (c) all rights reserved 2024</span>
-        </span>
-        <a
-          href="https://t.me/raccoon_king_bot"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="landing-link"
-        >
-          <div class="landing-playbt">
-            <span class="landing-text002"><span>Play now</span></span>
-          </div>
-        </a>
-        <div class="landing-textbuttons">
-          <nuxt-link to="/contact-us" class="landing-text004">
-            <span>Contact us</span>
-          </nuxt-link>
-          <a href="#home" class="landing-text006"><span>Home</span></a>
-          <a href="#whatisfor" class="landing-text008">
-            <span>What is for</span>
-          </a>
-          <a href="#aboutproduct" class="landing-text010">
-            <span>About project</span>
-          </a>
-          <a href="#ourteam" class="landing-text012"><span>Our team</span></a>
-          <a href="#video" class="landing-text014">
-            <span>Video app review</span>
-          </a>
-          <a href="#FAQ" class="landing-text016"><span>FAQ</span></a>
-        </div>
-        <div class="landing-logo4">
-          <img
-            alt="Rectanglesvg1494"
-            src="/static/external/rectanglesvg1494-ljba-200w.png"
-            class="landing-rectanglesvg"
-          />
-        </div>
-        <img
-          alt="Line21431"
-          src="/static/external/line21431-6jyd.svg"
-          class="landing-line2"
-        />
-      </div>
-      <div id="FAQ" class="landing-faq">
-        <img
-          alt="bg7265"
-          src="/static/external/bg7265-v3ah-1000h.png"
-          class="landing-bg"
-        />
-        <span class="landing-text018">
-          <span class="landing-text019">How to play Raccoon in telegram</span>
-          <br />
-          <span class="landing-text021"></span>
-          <span class="landing-text022"
-            >you must follow the link to the bot</span
-          >
-          <br />
-          <span class="landing-text024">press the START button in chat</span>
-          <br />
-          <span class="landing-text026">
-            in the menu below, press the colored PLAY button
-          </span>
-          <br />
-          <span class="landing-text028">you&apos;re in the game!</span>
-          <br />
-          <span class="landing-text030"></span>
-          <br />
-          <span class="landing-text032"></span>
-          <br />
-          <span class="landing-text034"></span>
-          <span class="landing-text035"
-            >When will the listing be available?</span
-          >
-          <br />
-          <span class="landing-text037"></span>
-          <span class="landing-text038">
-            We will notify all users in the app about the upcoming listing so
-            they have time to prepare
-          </span>
-          <br />
-          <span class="landing-text040"></span>
-          <br />
-          <span class="landing-text042"></span>
-          <span class="landing-text043">How do I save/load progress?</span>
-          <br />
-          <span class="landing-text045"></span>
-          <span class="landing-text046">
-            inside the application go to the SETTINGS tab
-          </span>
-          <br />
-          <span class="landing-text048">
-            it has buttons for changing accounts and saving progress
-          </span>
-          <br />
-          <span class="landing-text050"></span>
-          <br />
-          <span class="landing-text052"></span>
-          <span class="landing-text053">
-            Will there be new modes in the game?
-          </span>
-          <br />
-          <span class="landing-text055"></span>
-          <span>
-            yes, we regularly release updates to the game, and will soon add new
-            features
-          </span>
-        </span>
-        <img
-          alt="question1svg1522"
-          src="/static/external/question1svg1522-i9za-400w.png"
-          class="landing-question1svg"
-        />
-        <img
-          alt="question2svg1523"
-          src="/static/external/question2svg1523-ffli-400w.png"
-          class="landing-question2svg"
-        />
-        <span class="landing-text057">FAQ</span>
-        <span class="landing-text058">FAQ</span>
-      </div>
-      <div class="landing-gototelegram">
-        <img
-          alt="bg7269"
-          src="/static/external/bg7269-0tlc-700h.png"
-          class="landing-bg1"
-        />
-        <span class="landing-text059">
-          <span>Go to the telegram and try our mini-app:</span>
-        </span>
-        <img
-          alt="telegrampngsvg1431"
-          src="/static/external/telegrampngsvg1431-cu3g.svg"
-          class="landing-telegrampngsvg"
-        />
-        <img
-          alt="telegrampngsvg1431"
-          src="/static/external/telegrampngsvg1431-wkjn.svg"
-          class="landing-telegrampngsvg1"
-        />
-        <img
-          alt="bgofking1431"
-          src="/static/external/bgofking1431-pghq-400h.png"
-          class="landing-bgofking"
-        />
-        <img
-          alt="raccoonkingsvg1431"
-          src="/static/external/raccoonkingsvg1431-i9up-400h.png"
-          class="landing-raccoonkingsvg"
-        />
-        <a
-          href="https://t.me/raccoon_king_bot"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="landing-link1"
-        >
-          <div class="landing-firstbt">
-            <img
-              alt="blurbutton1431"
-              src="/static/external/blurbutton1431-yoda-500w.png"
-              class="landing-blurbutton"
-            />
-            <img
-              alt="bgbutton1431"
-              src="/static/external/bgbutton1431-rcug-200h.png"
-              class="landing-bgbutton"
-            />
-            <img
-              alt="mainbutton1431"
-              src="/static/external/mainbutton1431-by8o-200h.png"
-              class="landing-mainbutton"
-            />
-            <span class="landing-text061"><span>Join Kings</span></span>
-          </div>
-        </a>
-      </div>
-      <section id="video" class="landing-video">
-        <img
-          alt="bg7262"
-          src="/static/external/bg7262-2un8-1000h.png"
-          class="landing-bg2"
-        />
-        <span class="landing-text063">
-          <span>Video tutorial about Raccoon King:</span>
-        </span>
-        <img
-          alt="videorectangle1471"
-          src="/static/external/videorectangle1471-1ixc-800h.png"
-          class="landing-videorectangle"
-        />
-        <img
-          alt="youtubelogosvg1471"
-          src="/static/external/youtubelogosvg1471-cxw-200h.png"
-          class="landing-youtubelogosvg"
-        />
-        <div class="landing-raccoontails">
-          <img
-            alt="IMAGE21471"
-            src="/static/external/image21471-osuk-200h.png"
-            class="landing-image2"
-          />
-          <img
-            alt="IMAGE51471"
-            src="/static/external/image51471-29rg-200h.png"
-            class="landing-image5"
-          />
-          <img
-            alt="IMAGE61471"
-            src="/static/external/image61471-hvp-200h.png"
-            class="landing-image6"
-          />
-          <img
-            alt="IMAGE21471"
-            src="/static/external/image21471-mhrs-200h.png"
-            class="landing-image21"
-          />
-          <img
-            alt="IMAGE31471"
-            src="/static/external/image31471-tjch-200h.png"
-            class="landing-image3"
-          />
-          <img
-            alt="IMAGE41471"
-            src="/static/external/image41471-k7nr-200h.png"
-            class="landing-image4"
-          />
-        </div>
-      </section>
-      <div id="ourteam" class="landing-ourteam">
-        <img
-          alt="bg7258"
-          src="/static/external/bg7258-jdw-1200h.png"
-          class="landing-bg3"
-        />
-        <img
-          alt="racconsinteamsvg1565"
-          src="/static/external/racconsinteamsvg1565-ge4-1100w.png"
-          class="landing-racconsinteamsvg"
-        />
-        <img
-          alt="rectangleforblur1591"
-          src="/static/external/rectangleforblur1591-aru.svg"
-          class="landing-rectangleforblur"
-        />
-        <span class="landing-text065">
-          <span>- Person 1</span>
-          <br />
-          <span>- Person 2</span>
-          <br />
-          <span>- Designer</span>
-        </span>
-        <img
-          alt="pastedImage"
-          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a1571588-9bd3-4aee-a65c-78c7abfc84b5/f17490d4-50d7-4f21-b293-69ccf528dbda?org_if_sml=155174&amp;force_format=original"
-        />
-        <span class="landing-text071">
-          <span>
-            Our
-            <span v-html="rawy3yp"></span>
-          </span>
-          <span>team</span>
-        </span>
-        <span class="landing-text074">
-          <span>
-            Our
-            <span v-html="rawplv0"></span>
-          </span>
-          <span>team</span>
-        </span>
-        <img
-          alt="pastedImage"
-          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a1571588-9bd3-4aee-a65c-78c7abfc84b5/b88f4650-db19-4717-8469-4455776db317?org_if_sml=155174&amp;force_format=original"
-        />
-      </div>
-      <div class="landing-actionbar">
-        <img
-          alt="bg7255"
-          src="/static/external/bg7255-ayae-2000w.png"
-          class="landing-bg4"
-        />
-        <img
-          alt="Vectorright1217"
-          src="/static/external/vectorright1217-567j.svg"
-          class="landing-vectorright"
-        />
-        <img
-          alt="mainrect1216"
-          src="/static/external/mainrect1216-5059-400h.png"
-          class="landing-mainrect"
-        />
-        <a
-          href="https://t.me/raccoon_king_bot"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="landing-link2"
-        >
-          <div class="landing-firstbt1">
-            <img
-              alt="bgbutton1216"
-              src="/static/external/bgbutton1216-1axf-200h.png"
-              class="landing-bgbutton1"
-            />
-            <img
-              alt="mainbutton1216"
-              src="/static/external/mainbutton1216-faok-200h.png"
-              class="landing-mainbutton1"
-            />
-            <span class="landing-text077"><span>Play now</span></span>
-          </div>
-        </a>
-        <span class="landing-text079">
-          <span class="landing-text080">Take part in</span>
-          <br />
-          <span class="landing-text082">
-            mining
-            <span v-html="rawkwst"></span>
-          </span>
-          <span>Raccoon coin</span>
-        </span>
-        <img
-          alt="Vectorleft1217"
-          src="/static/external/vectorleft1217-933e.svg"
-          class="landing-vectorleft"
-        />
-        <img
-          alt="IMAGE1svg1217"
-          src="/static/external/image1svg1217-e92u-300w.png"
-          class="landing-image1svg"
-        />
-        <img
-          alt="IMAGE2svg1217"
-          src="/static/external/image2svg1217-x9l2-300w.png"
-          class="landing-image2svg"
-        />
-      </div>
-      <div id="aboutproduct" class="landing-aboutproduct">
-        <img
-          alt="bg7252"
-          src="/static/external/bg7252-b2zu-1000h.png"
-          class="landing-bg5"
-        />
-        <span class="landing-text084">
-          <span class="landing-text085">
-            We developed our mini-application with help of IT-languages:
-          </span>
-          <br />
-          <span class="landing-text087"></span>
-          <span class="landing-text088"><span v-html="rawsyfy"></span></span>
-          <span class="landing-text089">1) JavaScript</span>
-          <br />
-          <span class="landing-text091">2) HTML</span>
-          <br />
-          <span class="landing-text093"></span>
-          <span class="landing-text094">
-            With them we use for more productivity some frameworks:
-          </span>
-          <br />
-          <span class="landing-text096"></span>
-          <span class="landing-text097"><span v-html="rawe9vy"></span></span>
-          <span class="landing-text098">1) Vue.js</span>
-          <br />
-          <span class="landing-text100">2) Nuxt.js</span>
-          <br />
-          <span class="landing-text102"></span>
-          <span class="landing-text103">
-            We have mush types different ways to use it:
-          </span>
-          <br />
-          <span class="landing-text105"></span>
-          <span class="landing-text106"><span v-html="rawkv7g"></span></span>
-          <span class="landing-text107">1) Web version of app</span>
-          <br />
-          <span class="landing-text109">2) Installable application</span>
-          <br />
-          <span class="landing-text111">3) Telegram mini-app</span>
-          <br />
-          <span class="landing-text113"></span>
-          <span><span v-html="rawu04a"></span></span>
-        </span>
-        <span class="landing-text115"><span>Our product is about</span></span>
-        <span class="landing-text117"><span>Our product is about</span></span>
-        <img
-          alt="raccoonprogrammersvg1492"
-          src="/static/external/raccoonprogrammersvg1492-9izn-1000w.png"
-          class="landing-raccoonprogrammersvg"
-        />
-      </div>
-      <div id="whatisfor" class="landing-whatisfor">
-        <span class="landing-text119">
-          <span>What is this project for?</span>
-        </span>
-        <img
-          alt="Rectangle67215"
-          src="/static/external/rectangle67215-cksm.svg"
-          class="landing-rectangle6"
-        />
-        <div class="landing-frame1">
-          <div class="landing-title1">
-            <img
-              alt="titlerect1031"
-              src="/static/external/titlerect1031-vstk-200h.png"
-              class="landing-titlerect"
-            />
-            <span class="landing-text121">
-              <span>Earn money</span>
-              <br />
-              <span>just for clicking</span>
-            </span>
-            <span class="landing-text125">
-              <span>When you just tap</span>
-              <br />
-              <span>on the screen you</span>
-              <br />
-              <span>will get coins that can</span>
-              <br />
-              <span>be exchanged after</span>
-              <br />
-              <span>raccoon’s listing</span>
-            </span>
-          </div>
-          <div class="landing-titlte2">
-            <img
-              alt="titlerect1031"
-              src="/static/external/titlerect1031-mycf-200h.png"
-              class="landing-titlerect1"
-            />
-            <span class="landing-text135">
-              <span>Any monotonous,</span>
-              <br />
-              <span>thoughtless</span>
-              <br />
-              <span>activity that allows</span>
-              <br />
-              <span>you to escape from</span>
-              <br />
-              <span>the daily routine helps</span>
-              <br />
-              <span>you relax after</span>
-              <br />
-              <span>a hard day</span>
-            </span>
-            <span class="landing-text149">
-              <span>Calm and</span>
-              <br />
-              <span>reveale brain</span>
-            </span>
-          </div>
-          <div class="landing-title3">
-            <span class="landing-text153">
-              <span>Tired of being bored</span>
-              <br />
-              <span>in situations where</span>
-              <br />
-              <span>you just have to wait?</span>
-              <br />
-              <span>Lighten up the</span>
-              <br />
-              <span>anticipation</span>
-              <br />
-              <span>with our game</span>
-            </span>
-            <img
-              alt="titlerect1031"
-              src="/static/external/titlerect1031-od-200h.png"
-              class="landing-titlerect2"
-            />
-            <span class="landing-text165">
-              <span>Kill time</span>
-              <br />
-              <span>in boring</span>
-              <br />
-              <span>sutiations</span>
-            </span>
-          </div>
-          <div class="landing-title4">
-            <img
-              alt="titlerect1031"
-              src="/static/external/titlerect1031-8bp-200h.png"
-              class="landing-titlerect3"
-            />
-            <span class="landing-text171">
-              <span>The interface of our</span>
-              <br />
-              <span>game is very diverse</span>
-              <br />
-              <span>and filled with many</span>
-              <br />
-              <span>different raccoons</span>
-            </span>
-            <span class="landing-text179">
-              <span>Just watch for</span>
-              <br />
-              <span>cute raccoons</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div id="home" class="landing-firstscreen">
-        <img
-          alt="IMAGE21svg1182"
-          src="/static/external/image21svg1182-h2m-1000h.png"
-          class="landing-image21svg"
-        />
-        <span class="landing-text183">
-          <span>Watch small video</span>
-          <br />
-          <span>and know all</span>
-          <br />
-          <span>about our app</span>
-        </span>
-        <span class="landing-text189">
-          <span>Free clicker-bot Raccoon King</span>
-          <br />
-          <span>avaible right now</span>
-          <br />
-          <span></span>
-        </span>
-        <a
-          href="https://t.me/raccoon_king_bot"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="landing-link3"
-        >
-          <div class="landing-firstbt2">
-            <img
-              alt="bgbutton936"
-              src="/static/external/bgbutton936-a37j-200h.png"
-              class="landing-bgbutton2"
-            />
-            <img
-              alt="mainbutton7114"
-              src="/static/external/mainbutton7114-n7e-200h.png"
-              class="landing-mainbutton2"
-            />
-            <span class="landing-text195"><span>Play</span></span>
-          </div>
-        </a>
-        <div class="landing-secondbt">
-          <span class="landing-text197"><span>Download</span></span>
-          <img
-            alt="button8248"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a1571588-9bd3-4aee-a65c-78c7abfc84b5/e71f288c-28d8-40dd-b5f0-ef0e024cc5ba?org_if_sml=1123&amp;force_format=original"
-            class="landing-button"
-          />
-        </div>
-        <a href="#video" class="landing-link4">
-          <img
-            alt="playbg1031"
-            src="/static/external/playbg1031-t8v-200h.png"
-            class="landing-playbg"
-          />
-        </a>
-        <img
-          alt="arrow1212"
-          src="/static/external/arrow1212-mij.svg"
-          class="landing-arrow"
-        />
-        <a href="#video" class="landing-link5">
-          <img
-            alt="playlogo1031"
-            src="/static/external/playlogo1031-ch1e.svg"
-            class="landing-playlogo"
-          />
-        </a>
-      </div>
-      <header class="landing-header thq-heading-1">
-        <img
-          alt="bg6913"
-          src="/static/external/bg6913-zfj-200h.png"
-          class="landing-bg6"
-        />
-        <nuxt-link to="/contact-us" class="landing-navlink">
-          <div class="landing-contactbt">
-            <span class="landing-text199"><span>Contact us</span></span>
-          </div>
-        </nuxt-link>
-        <nuxt-link to="/developers" class="landing-navlink1">
-          <div class="landing-devbt">
-            <span class="landing-text201"><span>Developers</span></span>
-          </div>
-        </nuxt-link>
-        <nuxt-link to="/play-download" class="landing-navlink2">
-          <div class="landing-playbt1 button">
-            <span class="landing-text203"><span>Play/Download</span></span>
-          </div>
-        </nuxt-link>
-        <nuxt-link to="/" class="landing-navlink3">
-          <img
-            alt="LOGO1svg8229"
-            src="/static/external/logo1svg8229-hpk-200h.png"
-            class="landing-logo1svg"
-          />
-        </nuxt-link>
-      </header>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "Landing",
-  data() {
-    return {
-      rawy3yp: " ",
-      rawplv0: " ",
-      rawkwst: " ",
-      rawsyfy: " ",
-      rawe9vy: " ",
-      rawkv7g: " ",
-      rawu04a: " ",
-    };
-  },
-  head: {
-    title: "exported project",
-  },
-};
-</script>
-
-<style scoped>
 .landing-container {
   width: 100%;
   display: flex;
@@ -682,10 +60,10 @@ export default {
   flex-shrink: 1;
   padding-top: 1px;
   border-width: 0px;
-  padding-left: 0, 5;
+  padding-left: 0,5;
   border-radius: 79px;
-  padding-right: 0, 5;
-  padding-bottom: 0, 5;
+  padding-right: 0,5;
+  padding-bottom: 0,5;
   text-decoration: none;
   background-color: rgba(239, 177, 255, 1);
 }
@@ -1215,37 +593,7 @@ export default {
   height: 1140px;
   position: absolute;
 }
-.landing-racconsinteamsvg {
-  top: 2px;
-  left: 898px;
-  width: 1024px;
-  height: 1024px;
-  position: absolute;
-  border-radius: 81px;
-}
-.landing-rectangleforblur {
-  top: 0px;
-  left: 844px;
-  width: 1076px;
-  height: 1006px;
-  position: absolute;
-}
 .landing-text065 {
-  top: 388px;
-  left: 257px;
-  color: rgb(239, 177, 255);
-  height: auto;
-  position: absolute;
-  font-size: 40px;
-  font-style: Bold;
-  text-align: left;
-  font-family: "Lora";
-  font-weight: 700;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.landing-text071 {
   top: 93px;
   left: 125px;
   color: #481380;
@@ -1260,7 +608,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text074 {
+.landing-text068 {
   top: 78px;
   left: 119px;
   color: rgb(239, 177, 255);
@@ -1274,6 +622,64 @@ export default {
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+}
+.landing-text071 {
+  
+  top: 350px;
+  left: 550px;
+  color: rgba(239, 177, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  max-width: 1300px;
+}
+.landing-text071 ul {
+  list-style-type: disc;
+}
+.landing-text071 li {
+  margin-bottom: 125px; /* Устанавливаем отступ в 30 пикселей между элементами списка */
+}
+
+.landing-team {
+  gap: 67px;
+  top: 284px;
+  left: -616px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 44px;
+  flex-direction: column;
+}
+.landing-raccoonceo {
+  width: 191px;
+  height: 191px;
+  align-self: stretch;
+  border-radius: 44px;
+  transform: translateX(800px); /* Смещение вправо на 1000 пикселей */
+}
+.landing-raccoongirlprogrammer {
+  width: 191px;
+  height: 191px;
+  align-self: stretch;
+  border-radius: 44px;
+  transform: translateX(800px); /* Смещение вправо на 1000 пикселей */
+}
+.landing-raccoondesigner1 {
+  width: 191px;
+  height: 191px;
+  align-self: stretch;
+  border-radius: 44px;
+  transform: translateX(800px); /* Смещение вправо на 1000 пикселей */
 }
 .landing-actionbar {
   top: 2709px;
@@ -1337,7 +743,7 @@ export default {
   position: absolute;
   border-radius: 44px;
 }
-.landing-text077 {
+.landing-text087 {
   top: 29.501953125px;
   left: 142px;
   color: rgba(0, 0, 0, 1);
@@ -1353,7 +759,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text079 {
+.landing-text089 {
   top: 100.376953125px;
   left: 640px;
   color: rgba(255, 255, 255, 1);
@@ -1369,10 +775,10 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text080 {
+.landing-text090 {
   color: rgba(255, 255, 255, 1);
 }
-.landing-text082 {
+.landing-text092 {
   color: rgba(255, 255, 255, 1);
 }
 .landing-vectorleft {
@@ -1416,7 +822,7 @@ export default {
   margin: auto;
   position: absolute;
 }
-.landing-text084 {
+.landing-text094 {
   top: 305px;
   left: 958px;
   color: rgba(239, 177, 255, 1);
@@ -1430,65 +836,71 @@ export default {
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  margin-left: 40px;
 }
-.landing-text085 {
-  color: rgba(239, 177, 255, 1);
+
+.landing-text094 ul {
+  margin-left: 40px; /* Задаем отступ слева для элементов */
 }
-.landing-text087 {
-  color: rgba(239, 177, 255, 1);
-}
-.landing-text088 {
-  color: rgba(0, 0, 0, 1);
-}
-.landing-text089 {
-  color: rgba(255, 255, 255, 1);
-}
-.landing-text091 {
-  color: rgba(255, 255, 255, 1);
-}
-.landing-text093 {
-  color: rgba(255, 255, 255, 1);
-}
-.landing-text094 {
-  color: rgba(239, 177, 255, 1);
-}
-.landing-text096 {
+
+.landing-text095 {
   color: rgba(239, 177, 255, 1);
 }
 .landing-text097 {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(239, 177, 255, 1);
 }
 .landing-text098 {
+  color: rgba(0, 0, 0, 1);
+}
+.landing-text099 {
   color: rgba(255, 255, 255, 1);
 }
-.landing-text100 {
-  color: rgba(255, 255, 255, 1);
-}
-.landing-text102 {
+.landing-text101 {
   color: rgba(255, 255, 255, 1);
 }
 .landing-text103 {
-  color: rgba(239, 177, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
-.landing-text105 {
+.landing-text104 {
   color: rgba(239, 177, 255, 1);
 }
 .landing-text106 {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(239, 177, 255, 1);
 }
 .landing-text107 {
+  color: rgba(0, 0, 0, 1);
+}
+.landing-text108 {
   color: rgba(255, 255, 255, 1);
 }
-.landing-text109 {
+.landing-text110 {
   color: rgba(255, 255, 255, 1);
 }
-.landing-text111 {
+.landing-text112 {
   color: rgba(255, 255, 255, 1);
 }
 .landing-text113 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(239, 177, 255, 1);
 }
 .landing-text115 {
+  color: rgba(239, 177, 255, 1);
+}
+.landing-text116 {
+  color: rgba(0, 0, 0, 1);
+}
+.landing-text117 {
+  color: rgba(255, 255, 255, 1);
+}
+.landing-text119 {
+  color: rgba(255, 255, 255, 1);
+}
+.landing-text121 {
+  color: rgba(255, 255, 255, 1);
+}
+.landing-text123 {
+  color: rgba(255, 255, 255, 1);
+}
+.landing-text125 {
   top: 58px;
   left: 108px;
   color: #481380;
@@ -1503,7 +915,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text117 {
+.landing-text127 {
   top: 48px;
   left: 100px;
   color: rgba(239, 177, 255, 1);
@@ -1536,7 +948,7 @@ export default {
   align-items: flex-start;
   flex-shrink: 1;
 }
-.landing-text119 {
+.landing-text129 {
   left: 600px;
   color: rgba(255, 255, 255, 1);
   width: 744px;
@@ -1587,7 +999,7 @@ export default {
   position: absolute;
   border-radius: 58px;
 }
-.landing-text121 {
+.landing-text131 {
   top: 25.1090087890625px;
   left: 13px;
   color: rgba(255, 255, 255, 1);
@@ -1603,7 +1015,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text125 {
+.landing-text135 {
   top: 185.642578125px;
   left: 26px;
   color: rgba(0, 0, 0, 1);
@@ -1637,7 +1049,7 @@ export default {
   position: absolute;
   border-radius: 58px;
 }
-.landing-text135 {
+.landing-text145 {
   top: 185.642578125px;
   left: 26px;
   color: rgba(0, 0, 0, 1);
@@ -1653,7 +1065,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text149 {
+.landing-text159 {
   top: 25.1090087890625px;
   left: 39px;
   color: rgba(255, 255, 255, 1);
@@ -1679,7 +1091,7 @@ export default {
   border-radius: 58px;
   background-color: rgba(247, 218, 255, 1);
 }
-.landing-text153 {
+.landing-text163 {
   top: 185.642578125px;
   left: 27px;
   color: rgba(0, 0, 0, 1);
@@ -1703,7 +1115,7 @@ export default {
   position: absolute;
   border-radius: 58px;
 }
-.landing-text165 {
+.landing-text175 {
   top: 0.1090087890625px;
   left: 70px;
   color: rgba(255, 255, 255, 1);
@@ -1737,7 +1149,7 @@ export default {
   position: absolute;
   border-radius: 58px;
 }
-.landing-text171 {
+.landing-text181 {
   top: 185.642578125px;
   left: 37px;
   color: rgba(0, 0, 0, 1);
@@ -1753,7 +1165,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text179 {
+.landing-text189 {
   top: 25.1090087890625px;
   left: 29px;
   color: rgba(255, 255, 255, 1);
@@ -1788,7 +1200,7 @@ export default {
   height: 947px;
   position: absolute;
 }
-.landing-text183 {
+.landing-text193 {
   top: 438px;
   left: 1504px;
   color: rgba(255, 255, 255, 1);
@@ -1803,7 +1215,7 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-.landing-text189 {
+.landing-text199 {
   top: 190px;
   left: 290.99993896484375px;
   color: rgba(245, 245, 245, 1);
@@ -1811,7 +1223,7 @@ export default {
   height: auto;
   position: absolute;
   font-size: 64px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
   font-style: Bold;
   text-align: left;
   font-family: Lora;
@@ -1824,8 +1236,8 @@ export default {
   display: contents;
 }
 .landing-firstbt2 {
-  top: 504px;
-  left: 290.99993896484375px;
+  top: 454px;
+  left: 327px;
   width: 307.00006103515625px;
   height: 76px;
   display: flex;
@@ -1837,26 +1249,26 @@ export default {
 .landing-bgbutton2 {
   top: 7px;
   left: 2.00006103515625px;
-  width: 305px;
-  height: 69px;
+  width: 500px;
+  height: 129px;
   position: absolute;
   border-radius: 44px;
 }
 .landing-mainbutton2 {
   top: 0px;
   left: 0px;
-  width: 305px;
-  height: 70px;
+  width: 500px;
+  height: 125px;
   position: absolute;
   border-radius: 44px;
 }
-.landing-text195 {
-  top: 12px;
-  left: 118px;
+.landing-text205 {
+  top: 10px;
   color: rgba(0, 0, 0, 1);
+  right: -14px;
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 75px;
   font-style: Medium;
   text-align: left;
   font-family: Lora;
@@ -1869,35 +1281,13 @@ export default {
   top: 504px;
   left: 626px;
   width: 305px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 70px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(163, 123, 123, 0);
-}
-.landing-text197 {
-  top: 12.00006103515625px;
-  left: 68.0001220703125px;
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  position: absolute;
-  font-size: 36px;
-  font-style: Medium;
-  text-align: left;
-  font-family: Lora;
-  font-weight: 500;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-.landing-button {
-  width: 305px;
-  height: 70px;
-  border-color: rgba(239, 177, 255, 1);
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 44px;
 }
 .landing-link4 {
   display: contents;
@@ -1911,8 +1301,8 @@ export default {
   text-decoration: none;
 }
 .landing-arrow {
-  top: 369px;
-  left: 210px;
+  top: 340px;
+  left: 244px;
   width: 60px;
   height: 154px;
   position: absolute;
@@ -1961,7 +1351,7 @@ export default {
   text-decoration: none;
   background-color: rgba(116, 45, 210, 1);
 }
-.landing-text199 {
+.landing-text207 {
   top: 12px;
   left: 31px;
   color: rgba(255, 255, 255, 1);
@@ -1992,7 +1382,7 @@ export default {
   text-decoration: none;
   background-color: rgba(116, 45, 210, 1);
 }
-.landing-text201 {
+.landing-text209 {
   top: 12px;
   left: 32px;
   color: rgba(255, 255, 255, 1);
@@ -2026,11 +1416,12 @@ export default {
   background-color: rgba(239, 177, 255, 1);
 }
 
-.landing-text203 {
-  top: 12px;
-  left: 29px;
-  color: rgba(0, 0, 0, 1);
+.landing-text211 {
+  top: 10px;
+  left: 97px;
+  color: rgb(0, 0, 0);
   height: auto;
+  margin: auto;
   position: absolute;
   font-size: 25px;
   font-style: Book;
@@ -2052,4 +1443,3 @@ export default {
   position: absolute;
   text-decoration: none;
 }
-</style>

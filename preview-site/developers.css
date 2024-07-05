@@ -1,59 +1,7 @@
-<template>
-  <div class="developers-container">
-    <div class="developers-header">
-      <img
-        alt="bg6913"
-        src="/static/external/bg6913-zfj-200h.png"
-        class="developers-bg"
-      />
-      <nuxt-link to="/contact-us" class="developers-navlink">
-        <div class="developers-contactbt">
-          <span class="developers-text"><span>Contact us</span></span>
-        </div>
-      </nuxt-link>
-      <div class="developers-devbt">
-        <span class="developers-text2"><span>Developers</span></span>
-      </div>
-      <nuxt-link to="/" class="developers-navlink1">
-        <img
-          alt="LOGO11032"
-          src="/static/external/logo11032-ask-200h.png"
-          class="developers-logo1"
-        />
-      </nuxt-link>
-      <nuxt-link to="/play-download" class="developers-navlink2">
-        <div class="developers-playbt button">
-          <span class="developers-text4"><span>Play/Download</span></span>
-        </div>
-      </nuxt-link>
-    </div>
-    <div>
-      <h1>Developers</h1>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "Developers",
-  props: {},
-  head: {
-    title: "Developers - exported project",
-    meta: [
-      {
-        property: "og:title",
-        content: "Developers - exported project",
-      },
-    ],
-  },
-};
-</script>
-
-<style scoped>
 .developers-container {
   width: 100%;
   display: flex;
-  min-height: 100vh;
+  min-height: 125vh;
   align-items: center;
   flex-direction: column;
   background-color: #000000;
@@ -120,7 +68,7 @@ export default {
   border-radius: 44px;
   background-color: rgba(239, 177, 255, 0.43);
 }
-.developers-text2 {
+.developers-text02 {
   top: 7px;
   left: 32px;
   color: rgba(255, 255, 255, 1);
@@ -165,10 +113,10 @@ export default {
   background-color: rgba(239, 177, 255, 1);
 }
 
-.developers-text4 {
-  top: 12px;
-  left: 29px;
-  color: rgba(0, 0, 0, 1);
+.developers-text04 {
+  top: 13px;
+  left: 95px;
+  color: rgb(0, 0, 0);
   height: auto;
   position: absolute;
   font-size: 25px;
@@ -180,4 +128,88 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-</style>
+.developers-text05 {
+  top: 200px;
+  left: 350px;
+  color: rgba(239, 177, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  max-width: 1500px;
+}
+.developers-text05 ul {
+  list-style-type: disc;
+}
+
+.developers-text05 li {
+  margin-bottom: 75px; /* Устанавливаем отступ в 30 пикселей между элементами списка */
+}
+
+.developers-team {
+  gap: 67px;
+  width: 191px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.developers-raccoonceo {
+  left: -731px;
+  width: 146px;
+  bottom: -445px;
+  height: 146px;
+  position: absolute;
+  align-self: stretch;
+  border-radius: 44px;
+}
+.developers-raccoongirlprogrammer {
+  left: -729px;
+  width: 146px;
+  bottom: -627px;
+  height: 146px;
+  position: absolute;
+  align-self: stretch;
+  border-radius: 44px;
+}
+.developers-raccoondesigner1 {
+  left: -731px;
+  width: 146px;
+  bottom: -266px;
+  height: 146px;
+  position: absolute;
+  align-self: stretch;
+  border-radius: 44px;
+}
+.developers-text21 {
+  left: 188px;
+  color: rgba(255, 255, 255, 1);
+  bottom: -175px;
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  font-style: Book;
+  text-align: left;
+  font-family: Stolzl;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.developers-racconsinteamsvg {
+  right: 21px;
+  width: 495px;
+  bottom: -175px;
+  height: 495px;
+  position: absolute;
+  align-self: center;
+  border-radius: 81px;
+}

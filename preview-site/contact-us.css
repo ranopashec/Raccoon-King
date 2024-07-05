@@ -1,52 +1,3 @@
-<template>
-  <div class="contact-us-container">
-    <div class="contact-us-header">
-      <img
-        alt="bg6913"
-        src="/static/external/bg6913-zfj-200h.png"
-        class="contact-us-bg"
-      />
-      <div class="contact-us-contactbt">
-        <span class="contact-us-text">Contact us</span>
-      </div>
-      <nuxt-link to="/developers" class="contact-us-navlink">
-        <div class="contact-us-devbt">
-          <span class="contact-us-text1">Developers</span>
-        </div>
-      </nuxt-link>
-      <nuxt-link to="/" class="contact-us-navlink1">
-        <img
-          alt="LOGO11032"
-          src="/static/external/logo11032-ask-200h.png"
-          class="contact-us-logo1"
-        />
-      </nuxt-link>
-      <nuxt-link to="/play-download" class="contact-us-navlink2">
-        <div class="contact-us-playbt button">
-          <span class="contact-us-text2"><span>Play/Download</span></span>
-        </div>
-      </nuxt-link>
-    </div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "ContactUs",
-  props: {},
-  head: {
-    title: "Contact-us - exported project",
-    meta: [
-      {
-        property: "og:title",
-        content: "Contact-us - exported project",
-      },
-    ],
-  },
-};
-</script>
-
-<style scoped>
 .contact-us-container {
   width: 100%;
   display: flex;
@@ -117,7 +68,7 @@ export default {
   text-decoration: none;
   background-color: #742dd2;
 }
-.contact-us-text1 {
+.contact-us-text01 {
   top: 13px;
   left: 31px;
   color: rgb(255, 255, 255);
@@ -155,18 +106,19 @@ export default {
   display: flex;
   position: absolute;
   transition: 0.3s;
-  align-items: flex-start;
+  align-items: center;
   flex-shrink: 1;
   border-width: 0px;
   border-radius: 44px;
+  justify-content: center;
   text-decoration: none;
   background-color: rgba(239, 177, 255, 1);
 }
 
-.contact-us-text2 {
-  top: 12px;
-  left: 29px;
-  color: rgba(0, 0, 0, 1);
+.contact-us-text02 {
+  top: 10px;
+  left: 97px;
+  color: rgb(0, 0, 0);
   height: auto;
   position: absolute;
   font-size: 25px;
@@ -178,4 +130,71 @@ export default {
   font-stretch: normal;
   text-decoration: none;
 }
-</style>
+.contact-us-raccoonwithheadphones1 {
+  right: 101px;
+  width: 679px;
+  bottom: 97px;
+  height: 679px;
+  position: absolute;
+  border-radius: 128px;
+}
+.contact-us-text05 {
+  top: 424px;
+  left: 190px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.contact-us-text11 {
+  top: 617px;
+  left: 190px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Lora;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.contact-us-bg1 {
+  top: 110px;
+  left: 142px;
+  color: rgb(72, 19, 128);
+  height: auto;
+  position: absolute;
+  font-size: 120px;
+  font-style: italic;
+  text-align: left;
+  font-family: Acari Sans;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.contact-us-text20 {
+  top: 114px;
+  left: 135px;
+  color: rgb(239, 177, 255);
+  height: auto;
+  position: absolute;
+  font-size: 120px;
+  font-style: italic;
+  text-align: left;
+  font-family: Acari Sans;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
