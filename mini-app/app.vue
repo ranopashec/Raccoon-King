@@ -7,7 +7,7 @@ import { provide, ref, reactive, onMounted, onBeforeUnmount } from 'vue';
 
 const raccoonsPerSec = ref(0);
 const raccoonsPerClick = ref(1);
-const nickName = ref("Nickname");
+const nickName = ref('Nickname');
 const raccoons = ref(0);
 const timer = ref();
 const theme2 = ref(false);
@@ -55,31 +55,29 @@ onMounted(() => {
   nickName.value = window.Telegram.WebApp.initDataUnsafe.user.username;
 });
 
-
 onMounted(async () => {
   const storage = window.Telegram.WebApp.CloudStorage;
-  const promise1 =  new Promise ((resolve) => {
+  const promise1 = new Promise(resolve => {
     storage.getItem('raccoons', (error, value) => {
-      if ((value === null) || (value === undefined) || error) {
-        resolve (Number(0))
-      } 
-      resolve (Number(value))
+      if (value === null || value === undefined || error) {
+        resolve(Number(0));
+      }
+      resolve(Number(value));
     });
-  })
+  });
   const value1 = await promise1;
   raccoons.value = value1;
-  
-  const promise2 =  new Promise ((resolve) => {
+
+  const promise2 = new Promise(resolve => {
     storage.getItem('raccoonsPerSec', (error, value) => {
-      if ((value === null) || (value === undefined) || error) {
-        resolve (Number(0))
-      } 
-      resolve (Number(value))
+      if (value === null || value === undefined || error) {
+        resolve(Number(0));
+      }
+      resolve(Number(value));
     });
-  })
+  });
   const value2 = await promise2;
   raccoonsPerSec.value = value2;
-  
 });
 
 onMounted(() => {
@@ -91,7 +89,7 @@ onMounted(() => {
 });
 onBeforeUnmount(() => {
   timer.value = 0;
-})
+});
 
 provide('raccoons', raccoons);
 const userLevel = ref(0);
@@ -111,11 +109,11 @@ userLevel.value = computed(function () {
 });
 
 const classStyle = computed(function () {
-  if (theme2) {
-    return "font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-20 via-50% to-100% from-green-950/40 via-green-950/20 to-green-950/40";
-  } else {
-    return "font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-20 via-50% to-100% from-purple-950/40 via-purple-950/20 to-purple-950/40";
-  }
+  // if (theme2) {
+  //   return "font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-20 via-50% to-100% from-green-950/40 via-green-950/20 to-green-950/40";
+  // } else {
+  return 'font-sans min-h-screen touch-pan-x touch-pan-y py-4 px-4 bg-gradient-to-r from-0% via-20 via-50% to-100% from-purple-950/40 via-purple-950/20 to-purple-950/40';
+  // }
 });
 
 provide('raccoonsPerSec', raccoonsPerSec);
